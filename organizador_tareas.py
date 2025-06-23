@@ -23,7 +23,7 @@ class Organizador_de_tareas:
             print("Todavía no se ha creado ninguna tarea.\n")
         else:
             print("----- Lista de tareas -----\n")
-            print("----- No completadas -----\n")
+            print("----- Pendientes -----\n")
             tareas_no_completadas = list(filter(lambda x: x.estado_a_completar == False, self.almacenamiento_de_tareas))
             for tarea_actual in tareas_no_completadas:
                 print(f"{self.almacenamiento_de_tareas.index(tarea_actual)+1}{tarea_actual.mostrar_informacion()}")
