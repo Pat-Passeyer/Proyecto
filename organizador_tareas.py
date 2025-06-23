@@ -103,7 +103,7 @@ class Organizador_de_tareas:
     
     def cargar_tareas(self):
         try:
-            print("Cargando archivos...\n")
+            print("Cargando archivo...\n")
             with open(tareas_json, "r", encoding="utf-8") as f:
                 lista_contenidos = json.load(f)
             
